@@ -1,6 +1,7 @@
 #include <iostream>
 #include <doodle/doodle.hpp>
 #include "game.h"
+#include "map2.h"
 using namespace doodle;
 
 inline Game game;
@@ -16,17 +17,33 @@ int main(void)
 
         if (state == GameState::Map1)
         {
-            game.Update();
-            game.Draw();
-            game.PlayerDraw();
-        }
-        else
-        {
             
-            draw_rectangle(0, 0, 1000);
-            draw_text("nextmap", 400, 0);
+            game.RoomWall();
+            game.Draw();
+            map.TrapDoor();
+            game.PlayerDraw();
+            game.PlayerMovement();
+            game.Room1Door();
+            
+            map.Door3();
+            map.Picture();
+            
+        }
+        else if (state == GameState::Map2)
+        { 
+            map.draw_background();
+            game.RoomWall();
             game.PlayerMovement();
             game.PlayerDraw();
+            game.Room2Door();
+            map.itemPickup();
+        }
+        else if (state == GameState::Map3)
+        {
+            push_settings();
+            set_fill_color(255);
+            draw_text("Clear!", 400, 500);
+            pop_settings();
         }
        
     }

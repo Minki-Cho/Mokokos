@@ -5,7 +5,7 @@
 
 void Game::Draw()
 {
-	doodle::draw_image(background, -10, 50);
+	doodle::draw_image(background, 9, 25);
 	
 }
 void Game::PlayerDraw()
@@ -15,18 +15,31 @@ void Game::PlayerDraw()
 	draw_ellipse(playMoving_x, playMoving_y, 30);
 	pop_settings();
 }
-void Game::Update()
+void Game::Room1Door()
 {
-	Game::PlayerMovement();
-
-	if (playMoving_x < 163  )
+	if (playMoving_x < 163)
 	{
 		if (playMoving_y < 596 && playMoving_y > 445)
 		{
 			state = GameState::Map2;
-			playMoving_x = 865;
+			playMoving_x = 860;
 		}
 	}
+}
+void Game::Room2Door()
+{
+	if (playMoving_x > 870)
+	{
+		if (playMoving_y < 596 && playMoving_y > 445)
+		{
+			state = GameState::Map1;
+			playMoving_x = 161;
+		}
+	}
+}
+
+void Game::RoomWall()
+{
 
 	if (playMoving_x < 163)
 	{
