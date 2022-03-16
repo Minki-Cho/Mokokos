@@ -28,6 +28,7 @@ public:
 	void Draw();
 	void Update();
 	void PlayerMovement();
+	void PlayerDraw();
 	void key_pressed(KeyboardButtons button);
 	void key_released(KeyboardButtons button);
 	void mouse_released(MouseButtons button);

@@ -6,6 +6,10 @@
 void Game::Draw()
 {
 	doodle::draw_image(background, -10, 50);
+	
+}
+void Game::PlayerDraw()
+{
 	push_settings();
 	set_fill_color(100, 123, 123);
 	draw_ellipse(playMoving_x, playMoving_y, 30);
@@ -20,8 +24,8 @@ void Game::Update()
 		if (playMoving_y < 596 && playMoving_y > 445)
 		{
 			state = GameState::Map2;
+			playMoving_x = 865;
 		}
-		
 	}
 
 	if (playMoving_x < 163)

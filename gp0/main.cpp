@@ -18,6 +18,7 @@ int main(void)
         {
             game.Update();
             game.Draw();
+            game.PlayerDraw();
         }
         else
         {
@@ -25,6 +26,7 @@ int main(void)
             draw_rectangle(0, 0, 1000);
             draw_text("nextmap", 400, 0);
             game.PlayerMovement();
+            game.PlayerDraw();
         }
        
     }
