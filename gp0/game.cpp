@@ -11,9 +11,32 @@ void Game::Draw()
 void Game::PlayerDraw()
 {
 	push_settings();
-	set_fill_color(100, 123, 123);
-	draw_ellipse(playMoving_x, playMoving_y, 30);
+	set_image_mode(RectMode::Center);
+
+
+	if(w_key)
+	{
+		draw_image(p_back, playMoving_x, playMoving_y,120,170);
+	}
+	//else draw_image(p_back, playMoving_x, playMoving_y);
+	else if(s_key) 
+	{
+		draw_image(p_front, playMoving_x, playMoving_y, 120, 170);
+	}
+	//else draw_image(p_front, playMoving_x, playMoving_y);
+	else if(a_key)
+	{
+		draw_image(p_left, playMoving_x, playMoving_y, 120, 170);
+	}
+	//else draw_image(p_left, playMoving_x, playMoving_y);
+	else if(d_key)
+	{
+		draw_image(p_right, playMoving_x, playMoving_y, 120, 170);
+	}
+	else draw_image(p_right, playMoving_x, playMoving_y,120,170);
+
 	pop_settings();
+	
 }
 void Game::Room1Door()
 {

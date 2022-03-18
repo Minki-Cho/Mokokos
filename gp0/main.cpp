@@ -34,9 +34,9 @@ int main(void)
             map.draw_background();
             game.RoomWall();
             game.PlayerMovement();
-            game.PlayerDraw();
             game.Room2Door();
             map.itemPickup();
+            game.PlayerDraw();
         }
         else if (state == GameState::Map3)
         {
