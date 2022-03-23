@@ -33,7 +33,10 @@ void Game::PlayerDraw()
 	{
 		draw_image(p_right, playMoving_x, playMoving_y, 120, 170);
 	}
-	else draw_image(p_right, playMoving_x, playMoving_y,120,170);
+	else
+	{
+		
+	}
 
 	pop_settings();
 	
