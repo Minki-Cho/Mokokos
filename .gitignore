@@ -23,8 +23,7 @@
 # Compiled Static libraries
 *.lai
 *.la
-*.a
-*.lib
+*.a*.lib
 
 # Executables
 *.out
@@ -36,3 +35,6 @@ Release
 x64/
 k-house/.vs/k-house/v17/.suo
 k-house/.vs/k-house/v17/Browse.VC.db
+k-house/.vs/k-house/v17/.suo
+k-house/.vs/k-house/v17/Browse.VC.db
+k-house/.vs/
