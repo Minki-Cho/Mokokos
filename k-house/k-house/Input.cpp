@@ -8,28 +8,28 @@ void Input::PlayerMovement()
 	playMoving_y += acceleration_y;
 	if (w_key)
 	{
-		playMoving_y = playMoving_y + player_speed;
+		playMoving_y = playMoving_y + 3.5;
 	}
 	else
 		acceleration_y = 0;
 
 	if (s_key)
 	{
-		acceleration_y = player_speed;
+		acceleration_y = -3.5;
 	}
 	else
 		acceleration_y = 0;
 
 	if (a_key)
 	{
-		playMoving_x = playMoving_x - player_speed;
+		playMoving_x = playMoving_x - 3.5;
 	}
 	else
 		acceleration_x = 0;
 
 	if (d_key)
 	{
-		acceleration_x = player_speed;
+		acceleration_x = 3.5;
 	}
 	else
 		acceleration_x = 0;
@@ -53,9 +53,9 @@ void Input::key_pressed(KeyboardButtons button)
 	{
 		d_key = true;
 	}
-	if (button == KeyboardButtons::Space)
+	if (button == KeyboardButtons::G)
 	{
-		space_key = true;
+		g_key = true;
 	}
 
 
@@ -65,23 +65,28 @@ void Input::key_released(KeyboardButtons button)
 {
 	if (button == KeyboardButtons::W)
 	{
+		std::cout << "w key\n";
 		w_key = false;
 	}
 	if (button == KeyboardButtons::S)
 	{
+		std::cout << "s key\n";
 		s_key = false;
 	}
 	if (button == KeyboardButtons::A)
 	{
+		std::cout << "a key\n";
 		a_key = false;
 	}
 	if (button == KeyboardButtons::D)
 	{
+		std::cout << "d key\n";
 		d_key = false;
 	}
-	if (button == KeyboardButtons::Space)
+	if (button == KeyboardButtons::G)
 	{
-		space_key = false;
+		std::cout << "g key\n";
+		g_key = false;
 	}
 }
 

@@ -25,7 +25,7 @@ void GamePlay::Update()
 
 void GamePlay::Draw() const
 {
-    doodle::clear_background(BackgroundColor);
+    //doodle::clear_background(BackgroundColor);
     currentScenes->Draw();
 }
 

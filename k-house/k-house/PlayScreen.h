@@ -1,7 +1,6 @@
-#include <doodle/doodle.hpp>
 #pragma once
+#include <doodle/doodle.hpp>
 #include "Scene.h"
-
 #include <doodle/color.hpp>
 #include "GamePlay.h"
 

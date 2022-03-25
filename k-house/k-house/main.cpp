@@ -1,11 +1,10 @@
-
 #include "Game.h"
 #include "Input.h"
 #include <doodle/window.hpp>
 
 int main(void)
 {
-    doodle::create_window(1024, 800);
+    doodle::create_window(1024, 1024);
     Game game;
 
     game.Setup();

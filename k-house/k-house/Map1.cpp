@@ -1,6 +1,7 @@
 #include "Map1.h"
 #include <iostream>
 #include <doodle/doodle.hpp>
+#include "Player.h"
 
 
 Map1::Map1(GamePlay& game_scene)
@@ -11,10 +12,11 @@ Map1::Map1(GamePlay& game_scene)
 
 void Map1::Update()
 {
-
+	player.Update();
 }
 
 void Map1::Draw() const
 {
-	doodle::draw_ellipse(0, 0, 100, 100);
+	player.Draw();
+	//doodle::draw_ellipse(0, 0, 100, 100);
 }
