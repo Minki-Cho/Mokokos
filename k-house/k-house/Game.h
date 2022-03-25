@@ -16,7 +16,8 @@ enum class GameScenes
     MAIN_MENU,
     CREDITS,
     OPTIONS,
-    PLAY
+    PLAY,
+    Map1
 };
 
 class Game

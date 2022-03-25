@@ -143,6 +143,7 @@
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="CreditsScreen.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GamePlay.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenu.cpp" />
@@ -155,10 +156,12 @@
     <ClInclude Include="Button.h" />
     <ClInclude Include="CreditsScreen.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GamePlay.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Map1.h" />
     <ClInclude Include="OptionsScreen.h" />
+    <ClInclude Include="GameScene.h" />
     <ClInclude Include="PlayScreen.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneDrawing.h" />

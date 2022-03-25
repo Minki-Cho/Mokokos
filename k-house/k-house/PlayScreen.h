@@ -3,13 +3,14 @@
 #include "Scene.h"
 
 #include <doodle/color.hpp>
+#include "GamePlay.h"
 
 using namespace doodle;
 
 
 class PlayScreen final : public Scene
 {
-    
+    GamePlay gameplay;
 public:
 
 
