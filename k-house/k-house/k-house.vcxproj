@@ -148,6 +148,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Map1.cpp" />
+    <ClCompile Include="Object.cpp" />
     <ClCompile Include="OptionsScreen.cpp" />
     <ClCompile Include="PlayScreen.cpp" />
     <ClCompile Include="SceneDrawing.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="Input.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Map1.h" />
+    <ClInclude Include="Object.h" />
     <ClInclude Include="OptionsScreen.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="PlayScreen.h" />
