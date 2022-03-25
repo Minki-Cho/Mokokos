@@ -1,5 +1,6 @@
 
 #include "Game.h"
+#include "Input.h"
 #include <doodle/window.hpp>
 
 int main(void)
@@ -17,4 +18,17 @@ int main(void)
     }
 
     return 0;
+}
+
+void on_key_pressed(KeyboardButtons button)
+{
+    input.key_pressed(button);
+}
+void on_key_released(KeyboardButtons button)
+{
+    input.key_released(button);
+}
+void on_mouse_released(MouseButtons button)
+{
+    input.mouse_released(button);
 }
