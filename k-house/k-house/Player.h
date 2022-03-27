@@ -4,7 +4,7 @@
 
 class Player {
 
-	doodle::Image player_left{ "assets/player_walking/player_left_motion4.png" };
+	doodle::Image player{ "assets/player_walking/One_for_All.png" };
 public:
 	Player();
 	void Draw();
