@@ -1,4 +1,4 @@
-//#include "sfml-sound.h"
+#include "sfml-sound.h"
 
 
 //[[noreturn]] void error(const std::string& s)
