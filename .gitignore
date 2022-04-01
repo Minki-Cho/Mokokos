@@ -1,44 +1,4 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-
-
-# Executables
-*.out
-*.app
-
-.vs/
-
-
-
-k-house/.vs/k-house/v17/.suo
-k-house/.vs/k-house/v17/Browse.VC.db
-k-house/.vs/k-house/v17/.suo
-k-house/.vs/k-house/v17/Browse.VC.db
-
-
-*.tlog
-
-
+.vs/Kevin's house/v17/
+doodle/x64/Debug/
+x64/Debug/
