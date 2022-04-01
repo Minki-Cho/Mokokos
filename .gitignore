@@ -2,3 +2,8 @@
 .vs/Kevin's house/v17/
 doodle/x64/Debug/
 x64/Debug/
+doodle/x64/Debug
+
+doodle/x64/Debug/doodle.log
+doodle/x64/Debug/vc143.idb
+*.idb
