@@ -1,0 +1,40 @@
+﻿  Button.cpp
+  CreditsScreen.cpp
+  Game.cpp
+  GamePlay.cpp
+  Input.cpp
+  main.cpp
+  MainMenu.cpp
+  Map1.cpp
+  Map2.cpp
+  Object.cpp
+  OptionsScreen.cpp
+  Player.cpp
+  PlayScreen.cpp
+  SceneDrawing.cpp
+  sfml-sound.cpp
+  코드를 생성하고 있습니다...
+     C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\x64\Debug\doodle.lib 라이브러리 및 C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\x64\Debug\doodle.exp 개체를 생성하고 있습니다.
+  doodle.vcxproj -> C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\x64\Debug\doodle.exe
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\Back_Ground.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\Back_Ground_-_1.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\Hall.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\piece-stick.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\item\piece_1.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\player_walking\One_for_All.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\sounds\bump.ogg
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\trapdoor-animation\1.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\trapdoor-animation\2.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\trapdoor-animation\3.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\trapdoor-animation\4.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\trapdoor-animation\5.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\trapdoor-animation\6.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\trapdoor-animation\7.png
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\doodle\assets\trapdoor-animation\8.png
+  15 File(s) copied
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\external\SFML\x64\bin\openal32.dll
+  1 File(s) copied
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\external\SFML\x64\bin\sfml-audio-d-2.dll
+  1 File(s) copied
+  C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\external\SFML\x64\bin\sfml-system-d-2.dll
+  1 File(s) copied
