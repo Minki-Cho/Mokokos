@@ -7,3 +7,6 @@ doodle/x64/Debug
 doodle/x64/Debug/doodle.log
 doodle/x64/Debug/vc143.idb
 *.idb
+x64/Debug/doodle.pdb
+doodle/x64/Debug/vc143.pdb
+doodle/x64/Debug/vc143.idb
