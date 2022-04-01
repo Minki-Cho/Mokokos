@@ -15,12 +15,14 @@ void Map1::Update()
 {
 	player.Update();
 	wall_collision();
+    ghost.Update();
 }
 
 void Map1::Draw() const
 {
 	doodle::draw_image(hall, -512, -512);
 	player.Draw();
+    ghost.Draw();
 	
 }
 void Map1::wall_collision()

@@ -96,8 +96,14 @@ void Player::Update()
 	input.PlayerMovement();
 }
 
+
+
+
+
+
 void Player::Player_Move(int Move1_X, int Move1_Y, int Move2_X, int Move2_Y)
 {
+
     Image_V1_X = Move1_X;
     Image_V1_Y = Move1_Y;
     Image_V2_X = Move2_X;

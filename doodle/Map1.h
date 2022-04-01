@@ -1,6 +1,7 @@
 #pragma once
 #include <doodle/doodle.hpp>
 #include "GameScene.h"
+#include "Ghost.h"
 
 class Map1 final : public GameScene
 {
