@@ -103,3 +103,4 @@ void Player::Player_Move(int Move1_X, int Move1_Y, int Move2_X, int Move2_Y)
     Image_V2_X = Move2_X;
     Image_V2_Y = Move2_Y;
 }
+

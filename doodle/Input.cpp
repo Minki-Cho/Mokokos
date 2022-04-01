@@ -40,26 +40,26 @@ void Input::key_pressed(KeyboardButtons button)
 	if (button == KeyboardButtons::W)
 	{
 		w_key = true;
-		point_key = w_key_value;
 	}
 	if (button == KeyboardButtons::S)
 	{
 		s_key = true;
-		point_key = s_key_value;
 	}
 	if (button == KeyboardButtons::A)
 	{
 		a_key = true;
-		point_key = a_key_value;
 	}
 	if (button == KeyboardButtons::D)
 	{
 		d_key = true;
-		point_key = d_key_value;
 	}
 	if (button == KeyboardButtons::G)
 	{
 		g_key = true;
+	}
+    if (button == KeyboardButtons::Tab)
+    {
+        tap_key = true;
 	}
 
 
@@ -92,6 +92,11 @@ void Input::key_released(KeyboardButtons button)
 		std::cout << "g key\n";
 		g_key = false;
 	}
+    if (button == KeyboardButtons::Tab)
+    {
+        std::cout << "Tap key\n";
+        tap_key = false;
+    }
 }
 
 void Input::mouse_released(MouseButtons button)
