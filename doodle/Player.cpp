@@ -5,102 +5,101 @@ Player::Player()
 
 void Player::Draw()
 {
-	
-	if (input.w_key == true && input.w_key == true)
+    doodle::draw_image(player, playMoving_x, playMoving_y, Image_V1_X, Image_V1_Y, Image_V2_X, Image_V2_Y, Image_Width,
+                       Image_Height);
+	if (input.w_key == true)
 	{
 		if (0 <= FrameCount % 100 && FrameCount % 100 <= 25)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 0, 80, 64, 64);
+            Player_Move(64, 64, 0, 80);
+            
 		}
 		if (25 < FrameCount % 100 && FrameCount % 100 <= 50)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 64, 80, 64, 64);
+            Player_Move(64, 64, 64, 80);
+           
 		}
 		if (50 < FrameCount % 100 && FrameCount % 100 <= 75)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 128, 80, 64, 64);
+            Player_Move(64, 64, 128, 80);
+           
 		}
 		if (75 < FrameCount % 100 && FrameCount % 100 <= 100)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 192, 80, 64, 64);
+            Player_Move(64, 64, 192, 80);
+            
 		}
 	}
-	else if (input.a_key == true && input.a_key == true)
+
+	else if (input.a_key == true)
 	{
 		if (0 <= FrameCount % 100 && FrameCount % 100 <= 25)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 0, 160, 64, 64);
+            Player_Move(64, 64, 0, 160);
+            
 		}
 		if (25 < FrameCount % 100 && FrameCount % 100 <= 50)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 64, 160, 64, 64);
+            Player_Move(64, 64, 64, 160);
 		}
 		if (50 < FrameCount % 100 && FrameCount % 100 <= 75)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 128, 160, 64, 64);
+            Player_Move(64, 64, 128, 160);
 		}
 		if (75 < FrameCount % 100 && FrameCount % 100 <= 100)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 192, 160, 64, 64);
+            Player_Move(64, 64, 192, 160);
 		}
 	}
-	else if (input.s_key == true && input.s_key == true)
+	else if (input.s_key == true )
 	{
 		if (0 <= FrameCount % 100 && FrameCount % 100 <= 25 )
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 0, 0, 64, 64);
+            Player_Move(64, 64, 0, 0);
 		}
 		if (25 < FrameCount % 100 && FrameCount % 100 <= 50)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 64, 0, 64, 64);
+            Player_Move(64, 64, 64, 0);
 		}
 		if (50 < FrameCount % 100 && FrameCount % 100 <= 75)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 128, 0, 64, 64);
+            Player_Move(64, 64, 128, 0);
 		}
 		if (75 < FrameCount % 100 && FrameCount % 100 <= 100)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 192, 0, 64, 64);
+            Player_Move(64, 64, 192, 0);
 		}
 		
 	}
-	else if (input.d_key == true && input.d_key == true)
+	else if (input.d_key == true )
 	{
 		if (0 <= FrameCount % 100 && FrameCount % 100 <= 25)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 0, 240, 64, 64);
+            Player_Move(64, 64, 0, 240);
 		}
 		if (25 < FrameCount % 100 && FrameCount % 100 <= 50)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 64, 240, 64, 64);
+            Player_Move(64, 64, 64, 240);
 		}
 		if (50 < FrameCount % 100 && FrameCount % 100 <= 75)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 128, 240, 64, 64);
+            Player_Move(64, 64, 128, 240);
 		}
 		if (75 < FrameCount % 100 && FrameCount % 100 <= 100)
 		{
-			doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 192, 240, 64, 64);
+            Player_Move(64, 64, 192, 240);
 		}
-	}
-	if (input.point_key == 0 && input.w_key == false)
-	{
-		doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 0, 80, 64, 64);
-	}
-	else if (input.point_key == 1 && input.a_key == false)
-	{
-		doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 0, 160, 64, 64);
-	}
-	else if (input.point_key == 2 && input.s_key == false)
-	{
-		doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 0, 0, 64, 64);
-	}
-	else if (input.point_key == 3 && input.d_key == false)
-	{
-		doodle::draw_image(player, playMoving_x, playMoving_y, 64, 64, 0, 240, 64, 64);
 	}
 }
 void Player::Update()
 {
 	input.PlayerMovement();
+}
+
+void Player::Player_Move(int Move1_X, int Move1_Y, int Move2_X, int Move2_Y)
+{
+    Image_V1_X = Move1_X;
+    Image_V1_Y = Move1_Y;
+    Image_V2_X = Move2_X;
+    Image_V2_Y = Move2_Y;
 }
