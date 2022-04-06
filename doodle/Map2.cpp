@@ -12,6 +12,8 @@ void Map2::Update()
 {
     player.Update();
     ghost.Update();
+    wall_collision();
+    Map2_Door();
 }
 
 void Map2::Draw() const
@@ -20,3 +22,33 @@ void Map2::Draw() const
     player.Draw();
     ghost.Draw();
 }
+
+void Map2::wall_collision()
+{
+    if (playMoving_x < -390) // left wall
+    {
+        playMoving_x += 3.5;
+    }
+    if (playMoving_x > 330) // right wall
+    {
+        playMoving_x -= 3.5;
+    }
+    if (playMoving_y > 287) // up wall
+    {
+        playMoving_y -= 3.5;
+    }
+    if (playMoving_y < -340) // down wall
+    {
+        playMoving_y += 3.5;
+    }
+}
+
+void Map2::Map2_Door()
+{
+    if (playMoving_x > 328 && playMoving_y > -91 && playMoving_y < 35)
+    {
+        GameScene::game().QueueNextPlayScene(PlayScenes::Map1);
+        playMoving_x = -325;
+    }
+}
+

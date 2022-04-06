@@ -70,9 +70,10 @@ void Map1::wall_collision()
 
 void Map1::Map1_Door()
 {
-    if (playMoving_x < -339 && playMoving_y < 31 && playMoving_y > -21)
+    if (playMoving_x <= -339 && playMoving_y < 31 && playMoving_y > -21)
     {
         GameScene::game().QueueNextPlayScene(PlayScenes::Map2);
         playMoving_x = 339;
+        playMoving_y = 36;
     }
 }
