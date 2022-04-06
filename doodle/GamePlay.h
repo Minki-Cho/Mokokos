@@ -5,6 +5,7 @@
 #include <doodle/doodle.hpp>
 
 #include "Map1.h"
+#include "Map2.h"
 
 enum class PlayScenes
 {

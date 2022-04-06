@@ -2,6 +2,8 @@
 #include <iostream>
 #include <doodle/doodle.hpp>
 #include "Player.h"
+#include "GamePlay.h"
+#include "GameScene.h"
 
 
 Map1::Map1(GamePlay& game_scene)
@@ -16,6 +18,7 @@ void Map1::Update()
 	player.Update();
 	wall_collision();
     ghost.Update();
+    Map1_Door();
 }
 
 void Map1::Draw() const
@@ -67,5 +70,9 @@ void Map1::wall_collision()
 
 void Map1::Map1_Door()
 {
-    //if (playMoving_x < -340 && playMoving_y < )
+    if (playMoving_x < -339 && playMoving_y < 31 && playMoving_y > -21)
+    {
+        GameScene::game().QueueNextPlayScene(PlayScenes::Map2);
+        playMoving_x = 339;
+    }
 }

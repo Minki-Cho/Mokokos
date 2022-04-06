@@ -9,8 +9,8 @@ void GamePlay::Setup()
 {
     doodle::set_frame_of_reference(doodle::FrameOfReference::RightHanded_OriginCenter);
     game_scenes[PlayScenes::Map1] = std::make_unique<Map1>(*this);
-    /*game_scenes[PlayScenes::Map2] = std::make_unique<CreditsScreen>(*this);
-    game_scenes[PlayScenes::Map3] = std::make_unique<OptionsScreen>(*this);
+    game_scenes[PlayScenes::Map2] = std::make_unique<Map2>(*this);
+    /*game_scenes[PlayScenes::Map3] = std::make_unique<OptionsScreen>(*this);
     game_scenes[PlayScenes::Map4] = std::make_unique<PlayScreen>(*this);*/
     queuedScenes = game_scenes[PlayScenes::Map1].get();
     currentScenes = game_scenes[PlayScenes::Map1].get();
