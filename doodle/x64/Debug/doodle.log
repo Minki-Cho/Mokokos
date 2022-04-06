@@ -1,6 +1,29 @@
-﻿  Object.cpp
+﻿  Button.cpp
+  CreditsScreen.cpp
+  Game.cpp
+  GamePlay.cpp
+  Input.cpp
+  MainMenu.cpp
+  Map1.cpp
+  Map2.cpp
+  Object.cpp
+  OptionsScreen.cpp
+  PlayScreen.cpp
+  Player.cpp
+  SceneDrawing.cpp
+  main.cpp
+  sfml-sound.cpp
+  Generating Code...
+  LINK : C:\Users\User\Desktop\2022_spring_digipen\Mokokos\x64\Debug\doodle.exe not found or not built by the last incremental link; performing full link
+     Creating library C:\Users\User\Desktop\2022_spring_digipen\Mokokos\x64\Debug\doodle.lib and object C:\Users\User\Desktop\2022_spring_digipen\Mokokos\x64\Debug\doodle.exp
   doodle.vcxproj -> C:\Users\User\Desktop\2022_spring_digipen\Mokokos\x64\Debug\doodle.exe
-  0개 파일이 복사되었습니다.
-  0개 파일이 복사되었습니다.
-  0개 파일이 복사되었습니다.
-  0개 파일이 복사되었습니다.
+  C:\Users\User\Desktop\2022_spring_digipen\Mokokos\doodle\assets\Books.png
+  C:\Users\User\Desktop\2022_spring_digipen\Mokokos\doodle\assets\Chest.png
+  C:\Users\User\Desktop\2022_spring_digipen\Mokokos\doodle\assets\Ghost.png
+  3개 파일이 복사되었습니다.
+  C:\Users\User\Desktop\2022_spring_digipen\Mokokos\external\SFML\x64\bin\openal32.dll
+  1개 파일이 복사되었습니다.
+  C:\Users\User\Desktop\2022_spring_digipen\Mokokos\external\SFML\x64\bin\sfml-audio-d-2.dll
+  1개 파일이 복사되었습니다.
+  C:\Users\User\Desktop\2022_spring_digipen\Mokokos\external\SFML\x64\bin\sfml-system-d-2.dll
+  1개 파일이 복사되었습니다.

@@ -10,6 +10,8 @@ private:
     double distance_y = 0;
     double distance = 0;
 
+	bool pick_up = false;
+
 public:
 	Object(double x, double y);
 
