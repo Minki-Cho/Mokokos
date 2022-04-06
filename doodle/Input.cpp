@@ -61,7 +61,10 @@ void Input::key_pressed(KeyboardButtons button)
     {
         tap_key = true;
 	}
-
+    if (button == KeyboardButtons::E)
+    {
+        e_key = true;
+    }
 
 }
 
@@ -96,6 +99,11 @@ void Input::key_released(KeyboardButtons button)
     {
         std::cout << "Tap key\n";
         tap_key = false;
+    }
+    if (button == KeyboardButtons::E)
+    {
+        std::cout << "e key\n";
+        e_key = false;
     }
 }
 

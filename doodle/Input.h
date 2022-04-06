@@ -19,7 +19,7 @@ public:
     bool d_key{ false };
     bool g_key{ false };
     bool tap_key{ false };
-
+    bool e_key{ false };
     int point_key = NULL;
 
     int w_key_value{ 0 };
@@ -28,7 +28,7 @@ public:
     int d_key_value{ 3 };
     int g_key_value{ 4 };
     int tap_key_value{ 5 };
-  
+    int  e_key_value{ 6 };
     void key_pressed(KeyboardButtons button);
     void key_released(KeyboardButtons button);
     void mouse_released(MouseButtons button);
