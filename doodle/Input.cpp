@@ -99,10 +99,14 @@ void Input::key_released(KeyboardButtons button)
     }
 }
 
+
+
 void Input::mouse_released(MouseButtons button)
 {
 	if (button == MouseButtons::Left)
 	{
 		std::cout << "playMoving_x: " << playMoving_x << '\n' << "playMoving_y: " << playMoving_y << '\n';
+       
 	}
+	
 }

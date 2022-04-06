@@ -31,7 +31,7 @@ void Map1::wall_collision()
 	{
 		playMoving_x += 3.5;
 	}
-	if (playMoving_y > 175) //stair
+    if ((playMoving_y > 175 && playMoving_x > 63 ) || (playMoving_y > 175 && playMoving_x < -133)) // stair
 	{
 		playMoving_y -= 3.5;
 	}
@@ -39,4 +39,9 @@ void Map1::wall_collision()
 	{
 		playMoving_x -= 3.5;
 	}
+}
+
+void Map1::Map1_Door()
+{
+
 }

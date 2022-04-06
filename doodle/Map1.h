@@ -13,4 +13,5 @@ public:
 	void Update() override;
 	void Draw() const override;
 	void wall_collision();
+    void Map1_Door();
 };

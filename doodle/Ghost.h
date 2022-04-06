@@ -5,7 +5,7 @@
 class Ghost
 {
     doodle::Image ghost{ "assets/Ghost.png" };
-
+   
 
 public:
     double x{ 0 };
@@ -16,7 +16,17 @@ public:
         push_settings();
         set_image_mode(RectMode::Corner);
         set_tint_color(255, 190);
-        doodle::draw_image(ghost, x, y, 100, 100);
+        if (x > playMoving_x)
+        {
+            doodle::draw_image(ghost, x, y, 100, 100,0,500,0,500);
+        }
+        else
+        {
+            doodle::draw_image(ghost, x, y, 100, 100);
+        }
+            
+
+
         pop_settings();
     }
     void Update()
