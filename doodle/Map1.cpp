@@ -77,4 +77,18 @@ void Map1::Map1_Door()
         playMoving_x = 339;
         playMoving_y = 36;
     }
+    if (playMoving_x >= 276 && playMoving_y < 31 && playMoving_y > -21)
+    {
+        GameScene::game().QueueNextPlayScene(PlayScenes::Map3);
+        playMoving_x = -339;
+        playMoving_y = 10;
+    }
+   
+     if (playMoving_y>= 337 && playMoving_x < 4 && playMoving_x > -60)
+    {
+        GameScene::game().QueueNextPlayScene(PlayScenes::Map4);
+        playMoving_x = -35;
+        playMoving_y = -340;
+    }
+
 }
