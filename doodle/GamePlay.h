@@ -6,6 +6,8 @@
 
 #include "Map1.h"
 #include "Map2.h"
+#include "Map3.h"
+#include "Map4.h"
 
 enum class PlayScenes
 {

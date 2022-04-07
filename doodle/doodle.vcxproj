@@ -124,6 +124,8 @@ xcopy /y /d "$(SolutionDir)external\SFML\$(Platform)\bin\sfml-system-2.dll" "$(T
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Map1.h" />
     <ClInclude Include="Map2.h" />
+    <ClInclude Include="Map3.h" />
+    <ClInclude Include="Map4.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="OptionsScreen.h" />
     <ClInclude Include="Player.h" />
@@ -153,6 +155,8 @@ xcopy /y /d "$(SolutionDir)external\SFML\$(Platform)\bin\sfml-system-2.dll" "$(T
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Map1.cpp" />
     <ClCompile Include="Map2.cpp" />
+    <ClCompile Include="Map3.cpp" />
+    <ClCompile Include="Map4.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="OptionsScreen.cpp" />
     <ClCompile Include="Player.cpp" />

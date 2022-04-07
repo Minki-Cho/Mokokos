@@ -87,6 +87,12 @@
     <ClInclude Include="ItemKey.h">
       <Filter>Header Files\Item</Filter>
     </ClInclude>
+    <ClInclude Include="Map3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Map4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="doodle.rc">
@@ -152,6 +158,12 @@
     </ClCompile>
     <ClCompile Include="ItemKey.cpp">
       <Filter>Source Files\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Map4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Map3.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
