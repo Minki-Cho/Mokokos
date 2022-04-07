@@ -20,6 +20,40 @@ void Map4::Draw() const
 {
     push_settings();
 
+    Timer++;
+    if (0 < Timer && Timer <= 10)
+    {
+        draw_image(Frame1, -512, -512);
+    }
+    else if (10 <= Timer && Timer <= 20)
+    {
+        draw_image(Frame2, -512, -512);
+    }
+    else if (20 <= Timer && Timer <= 30)
+    {
+        draw_image(Frame3, -512, -512);
+    }
+    else if (30 <= Timer && Timer <= 40)
+    {
+        draw_image(Frame4, -512, -512);
+    }
+    else if (40 <= Timer && Timer <= 50)
+    {
+        draw_image(Frame5, -512, -512);
+    }
+    else if (50 <= Timer && Timer <= 60)
+    {
+        draw_image(Frame6, -512, -512);
+    }
+    else if (60 <= Timer && Timer <= 70)
+    {
+        draw_image(Frame7, -512, -512);
+    }
+    else if (70 <= Timer)
+    {
+        draw_image(Frame8, -512, -512);
+    }
+
     doodle::draw_image(Frame1, -512, -512);
     pop_settings();
     player.Draw();

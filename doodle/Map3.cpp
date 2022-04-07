@@ -28,19 +28,19 @@ void Map3::Draw() const
 
 void Map3::wall_collision()
 {
-    if (playMoving_x < -390) // left wl
+    if (playMoving_x < -370) // left wall
     {
         playMoving_x += 3.5;
     }
-    if (playMoving_x > 330) // right wall
+    if (playMoving_x > 300) // right wall
     {
         playMoving_x -= 3.5;
     }
-    if (playMoving_y > 287) // up wall
+    if (playMoving_y > 11) // up wall
     {
         playMoving_y -= 3.5;
     }
-    if (playMoving_y < -340) // down wall
+    if (playMoving_y < -165) // down wall
     {
         playMoving_y += 3.5;
     }

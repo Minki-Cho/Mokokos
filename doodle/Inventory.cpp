@@ -1,6 +1,6 @@
 #include "Inventory.h"
 #include "Input.h"
-
+#include "Map4.h"
 
 Inventory::~Inventory()
 {
@@ -11,6 +11,7 @@ void Inventory::Draw() const
 {
     if (input.e_key == true)
     {
+
         for (int i = 0; i < 8; i++)
         {
             push_settings();

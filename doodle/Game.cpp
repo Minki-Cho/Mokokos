@@ -1,7 +1,7 @@
 ﻿
 #include "Game.h"
 #include <doodle/drawing.hpp>
-
+#include "Inventory.h"
 Game::Game()
 {
 }

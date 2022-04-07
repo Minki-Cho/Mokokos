@@ -5,6 +5,8 @@
 class Ghost
 {
     doodle::Image ghost{ "assets/Ghost.png" };
+    doodle::Image Ghost_Left{ "assets/Ghost_Left.png" };
+    doodle::Image Ghost_Right{ "assets/Ghost_Right.png" };
    
 
 public:
@@ -18,11 +20,11 @@ public:
         set_tint_color(255, 190);
         if (x > playMoving_x)
         {
-            doodle::draw_image(ghost, x, y, 100, 100,0,500,0,500);
+            doodle::draw_image(Ghost_Left, x, y, 100, 100);
         }
         else
         {
-            doodle::draw_image(ghost, x, y, 100, 100);
+            doodle::draw_image(Ghost_Right, x, y, 100, 100);
         }
             
 
