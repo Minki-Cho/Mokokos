@@ -1,6 +1,6 @@
 #include "GamePlay.h"
 #include <doodle/drawing.hpp>
-
+#include "Inventory.h"
 GamePlay::GamePlay()
 {
 }
@@ -20,6 +20,7 @@ void GamePlay::Setup()
 
 void GamePlay::Update()
 {
+
     if (queuedScenes != currentScenes)
         currentScenes = queuedScenes;
     currentScenes->Update();
@@ -29,7 +30,10 @@ void GamePlay::Draw() const
 {
     //doodle::clear_background(BackgroundColor);
     currentScenes->Draw();
+    inventory.Draw();
 }
+
+
 
 void GamePlay::QueueNextPlayScene(PlayScenes scene)
 {

@@ -14,11 +14,22 @@ void Map2::Update()
     ghost.Update();
     wall_collision();
     Map2_Door();
+
+
 }
 
 void Map2::Draw() const
 {
     doodle::draw_image(bed, -512, -512);
+    push_settings();
+    set_image_mode(doodle::RectMode::Center);
+
+    if (Frame_Stats == true)
+    {
+        doodle::draw_image(Broken_Frame, 0, 0, 500, 500);
+    }
+
+    pop_settings();
     player.Draw();
     ghost.Draw();
 }

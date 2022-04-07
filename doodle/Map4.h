@@ -4,7 +4,7 @@
 #include <doodle/doodle.hpp>
 
 inline bool Frame_Picture = false;
-inline double Timer;
+inline int  Timer{};
 class Map4 final : public GameScene
 {
     doodle::Image Frame1{ "assets/Frame_animation/Frame1.png" };

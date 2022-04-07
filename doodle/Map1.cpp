@@ -27,7 +27,6 @@ void Map1::Draw() const
 	player.Draw();
     ghost.Draw();
     object1.Draw();
-    inventory.Draw();
 }
 void Map1::wall_collision()
 {

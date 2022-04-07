@@ -63,7 +63,14 @@ void Input::key_pressed(KeyboardButtons button)
 	}
     if (button == KeyboardButtons::E)
     {
-        e_key = true;
+        if (e_key == true)
+        {
+            e_key = false;
+        }
+        else if (e_key == false)
+        {
+            e_key = true;
+        }
     }
 
 }
@@ -103,7 +110,8 @@ void Input::key_released(KeyboardButtons button)
     if (button == KeyboardButtons::E)
     {
         std::cout << "e key\n";
-        e_key = false;
+       
+     
     }
 }
 
