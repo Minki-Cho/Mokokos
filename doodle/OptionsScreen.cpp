@@ -9,7 +9,7 @@
 #include <iostream>
 
 OptionsScreen::OptionsScreen(Game& the_game)
-    : background(doodle::Width / 2.0, doodle::Height / 2.0, "Random Color"),
+    : background(doodle::Width / 2.0, doodle::Height / 2.0, "Hello"),
       mainMenu(doodle::Width / 2.0, doodle::Height - 50.0, "Main Menu"), Scene(the_game)
 {
 }
@@ -18,7 +18,7 @@ void OptionsScreen::Update()
 {
     if (background.DidClickButton())
     {
-        game().BackgroundColor = doodle::Color(doodle::random(255.0), doodle::random(255.0), doodle::random(255.0));
+        //game().BackgroundColor = doodle::Color(doodle::random(255.0), doodle::random(255.0), doodle::random(255.0));
     }
     else if (mainMenu.DidClickButton())
     {

@@ -34,7 +34,7 @@ void MainMenu::Update()
 
 void MainMenu::Draw() const
 {
-    Draw_Title("Main Menu");
+    Draw_Title("Kevin's House");
     play.Draw();
     options.Draw();
     credits.Draw();

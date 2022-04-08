@@ -31,7 +31,7 @@ void CreditsScreen::Draw() const
     doodle::set_fill_color(0);
     doodle::no_outline();
     doodle::set_font_backdrop_fade_out_interval(0.5, 0.55);
-    doodle::draw_text("This is credit screen", 0, 0);
+    doodle::draw_text("We are team mokokos", 0, 0);
     doodle::pop_settings();
 
     mainMenu.Draw();
