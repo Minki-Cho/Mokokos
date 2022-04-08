@@ -2,6 +2,7 @@
 #pragma once
 #include "Input.h"
 #include <doodle/doodle.hpp>
+//#include "sfml-sound.h"
 class Ghost
 {
     doodle::Image ghost{ "assets/Ghost.png" };
@@ -52,6 +53,7 @@ public:
         {
             shake += 0.03;
             shake = std::clamp(shake, 0.0, 1.0);
+            
         }
         if (shake > 0 && ghost_collision)
         {
