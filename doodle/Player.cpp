@@ -13,7 +13,7 @@ void Player::Draw()
 		if (0 <= FrameCount % 100 && FrameCount % 100 <= 25)
 		{
             Player_Move(64, 64, 0, 80);
-            
+            //game_sound.Playsound(static_cast<int>(Sounds::collision));
 		}
 		if (25 < FrameCount % 100 && FrameCount % 100 <= 50)
 		{

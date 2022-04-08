@@ -30,7 +30,7 @@ void on_key_pressed(KeyboardButtons button)
 void on_key_released(KeyboardButtons button)
 {
     input.key_released(button);
-    game_sound.Playsound(static_cast<int>(Sounds::collision));
+    
     
 }
 void on_mouse_released(MouseButtons button)
