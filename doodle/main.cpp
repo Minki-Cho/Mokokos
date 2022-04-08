@@ -3,9 +3,6 @@
 #include "sfml-sound.h"
 #include <doodle/window.hpp>
 
-
-
-
 int main(void)
 {
     doodle::create_window(1024, 1024);
@@ -34,6 +31,7 @@ void on_key_released(KeyboardButtons button)
 {
     input.key_released(button);
     game_sound.Playsound(static_cast<int>(Sounds::collision));
+    
 }
 void on_mouse_released(MouseButtons button)
 {

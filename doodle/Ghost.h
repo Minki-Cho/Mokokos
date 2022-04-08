@@ -40,7 +40,7 @@ public:
         const double chasing = 0.3 * doodle::DeltaTime;
         x += chasing * (playMoving_x - x);
         y += chasing * (playMoving_y - y);
-        if (sqrt((x - playMoving_x) * (x - playMoving_x) + (y - playMoving_y) * (y - playMoving_y)) < 70)
+        if (sqrt((x - playMoving_x ) * (x - playMoving_x ) + (y - playMoving_y ) * (y - playMoving_y)) < 70)
         {
             ghost_collision = true;
         }
