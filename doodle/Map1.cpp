@@ -30,10 +30,10 @@ void Map1::Draw() const
 }
 void Map1::wall_collision()
 {
-	if (playMoving_x < -340) // left wall
-	{
-		playMoving_x += 3.5;
-	}
+    if (playMoving_x < -340) // left wall
+    {
+        playMoving_x += 3.5;
+    }
     if (playMoving_x > 277) // right wall
     {
         playMoving_x -= 3.5;
@@ -42,30 +42,43 @@ void Map1::wall_collision()
     {
         playMoving_y -= 3.5;
     }
-    if (playMoving_y < -322 && playMoving_x < -77 ) //down wall, left
+    if (playMoving_y < -322 && playMoving_x < -90) // down wall, left
     {
         playMoving_y += 3.5;
     }
-    if (playMoving_y < -322 && playMoving_x > 10 ) //down wall, right
+    if (playMoving_y < -322 && playMoving_x > 40) // down wall, right
     {
         playMoving_y += 3.5;
     }
-    if ((playMoving_y < 233 && playMoving_y > 175 && playMoving_x > 63 )) //right stair up
-	{
-		playMoving_y -= 3.5;
-	}
-    if (playMoving_y < 236 && playMoving_y > 175 && playMoving_x > 63) //right stair down
+    if ((playMoving_y < 233 && playMoving_y > 175 && playMoving_x > 63)) // right stair up
+    {
+        playMoving_y -= 3.5;
+    }
+    if (playMoving_y < 265 && playMoving_y > 175 && playMoving_x > 63) // right stair down
     {
         playMoving_y += 3.5;
     }
     if (playMoving_y < 233 && playMoving_y > 175 && playMoving_x < -140) // left stair up
     {
         playMoving_y -= 3.5;
-	}
-    if (playMoving_y < 236 && playMoving_y > 175 && playMoving_x < -140) //left stair down
+    }
+    if (playMoving_y < 265 && playMoving_y > 175 && playMoving_x < -140) // left stair down
     {
         playMoving_y += 3.5;
     }
+    if (playMoving_x > 21 && playMoving_y > -468 && playMoving_y < -330)  //bottom door rightside
+    {
+        playMoving_x -= 3.5;
+    }
+    if (playMoving_x < -87 && playMoving_y > -468 && playMoving_y < -330) // bottom door leftside
+    {
+        playMoving_x += 3.5;
+    }
+    if (playMoving_x < 41 && playMoving_x > -104 && playMoving_y < -451) // bottom door downside
+    {
+        playMoving_y += 3.5;
+    }
+    
 }
 
 void Map1::Map1_Door()
