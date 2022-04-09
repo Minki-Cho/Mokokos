@@ -1,5 +1,6 @@
 #include "Item.h"
 #include "Player.h"
+#include "Map2.h"
 #include <iostream>
 using namespace std;
 void Item::Draw(double x, double y,double draw_width, double draw_height) const
@@ -18,7 +19,7 @@ void Item::Update(double x, double y, double draw_width, double draw_height , bo
     {
         if (y - draw_height / 2 < playMoving_y && y + draw_height / 2 > playMoving_y)
         {
-            draw_ellipse(0, 0, 100);
+            Get_Frame = true;
         }
     }
 }
