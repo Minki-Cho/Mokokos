@@ -2,11 +2,11 @@
 #include "GameScene.h"
 #include "Ghost.h"
 #include <doodle/doodle.hpp>
-
-inline bool Frame_Picture = false;
+inline bool Frame_Stats = false ;
 inline int  Timer{};
 class Map4 final : public GameScene
 {
+
     doodle::Image Frame1{ "assets/Frame_animation/Frame1.png" };
     doodle::Image Frame2{ "assets/Frame_animation/Frame2.png" };
     doodle::Image Frame3{ "assets/Frame_animation/Frame3.png" };
@@ -16,7 +16,6 @@ class Map4 final : public GameScene
     doodle::Image Frame7{ "assets/Frame_animation/Frame7.png" };
     doodle::Image Frame8{ "assets/Frame_animation/Frame8.png" };
 
-
 public:
     Map4(GamePlay& game_scene);
 
@@ -24,7 +23,4 @@ public:
     void Draw() const override;
     void wall_collision();
     void Map4_Door();
-
-
-
 };

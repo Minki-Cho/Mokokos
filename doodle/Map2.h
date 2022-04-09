@@ -3,7 +3,8 @@
 #include "GameScene.h"
 #include "Ghost.h"
 
-inline bool Frame_Stats = true;
+inline bool Get_Frame = false;
+
 class Map2 final : public GameScene
 {
     doodle::Image bed{ "assets/Back_Ground_-_1.png" };

@@ -1,5 +1,5 @@
 #include "Input.h"
-
+#include "GamePlay.h"
 using namespace doodle;
 
 void Input::PlayerMovement()
@@ -63,6 +63,11 @@ void Input::key_pressed(KeyboardButtons button)
 	}
     if (button == KeyboardButtons::E)
     {
+        if (Get_Frame == true)
+        {
+            Frame_Stats = true;
+		}
+       
         if (e_key == true)
         {
             e_key = false;

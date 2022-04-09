@@ -3,6 +3,9 @@
 #include "Player.h"
 #include "GamePlay.h"
 #include "GameScene.h"
+#include "Item.h"
+#include <iostream>
+using namespace std;
 
 Map2::Map2(GamePlay& game_scene) : GameScene(game_scene)
 {
@@ -14,8 +17,6 @@ void Map2::Update()
     ghost.Update();
     wall_collision();
     Map2_Door();
-
-
 }
 
 void Map2::Draw() const
@@ -24,10 +25,12 @@ void Map2::Draw() const
     push_settings();
     set_image_mode(doodle::RectMode::Center);
 
-    if (Frame_Stats == true)
+
+     if (Get_Frame == false)
     {
-        doodle::draw_image(Broken_Frame, 0, 0, 500, 500);
-    }
+        item.Image_Draw(Broken_Frame, 0, 0, 500, 500);
+        item.Update(0, 0, 500, 500, Get_Frame);
+     }
 
     pop_settings();
     player.Draw();
