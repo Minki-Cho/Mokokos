@@ -8,13 +8,14 @@
 #include "Map2.h"
 #include "Map3.h"
 #include "Map4.h"
-
+#include "Map5.h"
 enum class PlayScenes
 {
     Map1,
     Map2,
     Map3,
-    Map4
+    Map4,
+    Map5
 };
 
 class GamePlay

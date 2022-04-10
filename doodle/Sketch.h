@@ -3,7 +3,7 @@
 // author:	[NAME]
 // email:	[DIGIPEN EMAIL ADDRESS]
 //
-// Copyright © 2021 DigiPen, All rights reserved.
+// Copyright ï¿½ 2021 DigiPen, All rights reserved.
 //---------------------------------------------------------
 #pragma once
 #include <SFML/Audio.hpp>

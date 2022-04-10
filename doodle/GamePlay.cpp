@@ -12,6 +12,7 @@ void GamePlay::Setup()
     game_scenes[PlayScenes::Map2] = std::make_unique<Map2>(*this);
     game_scenes[PlayScenes::Map3] = std::make_unique<Map3>(*this);
     game_scenes[PlayScenes::Map4] = std::make_unique<Map4>(*this);
+    game_scenes[PlayScenes::Map5] = std::make_unique<Map5>(*this);
     /*game_scenes[PlayScenes::Map3] = std::make_unique<OptionsScreen>(*this);
     game_scenes[PlayScenes::Map4] = std::make_unique<PlayScreen>(*this);*/
     queuedScenes = game_scenes[PlayScenes::Map1].get();

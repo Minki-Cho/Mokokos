@@ -1,6 +1,5 @@
 #include "GamePlay.h"
 #include "GameScene.h"
-#include "Map3.h"
 #include "Player.h"
 #include <doodle/doodle.hpp>
 
@@ -92,5 +91,19 @@ void Map4::Map4_Door()
         GameScene::game().QueueNextPlayScene(PlayScenes::Map1);
         playMoving_x = -35;
         playMoving_y = 330;
+    }
+
+    if (Frame_Stats == true)
+    {
+      if ( playMoving_x >= 130 && playMoving_x<=330 )
+      {
+          if (playMoving_y >= 50 && playMoving_y <= 290)
+          {
+              GameScene::game().QueueNextPlayScene(PlayScenes::Map5);
+              playMoving_x = -380;
+              playMoving_y = 320;
+          }
+      
+      }
     }
 }

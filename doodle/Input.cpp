@@ -56,6 +56,12 @@ void Input::key_pressed(KeyboardButtons button)
 	if (button == KeyboardButtons::G)
 	{
 		g_key = true;
+
+		  if (Get_Frame == true)
+        {
+            Frame_Stats = true;
+        }
+       
 	}
     if (button == KeyboardButtons::Tab)
     {
@@ -63,11 +69,7 @@ void Input::key_pressed(KeyboardButtons button)
 	}
     if (button == KeyboardButtons::E)
     {
-        if (Get_Frame == true)
-        {
-            Frame_Stats = true;
-		}
-       
+      
         if (e_key == true)
         {
             e_key = false;
