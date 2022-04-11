@@ -22,14 +22,18 @@ public:
         push_settings();
         set_image_mode(RectMode::Corner);
         set_tint_color(255, 190);
-        apply_scale(1.5);
+        //apply_scale(1.5);
         if (x > playMoving_x)
         {
             doodle::draw_image(Ghost_Left, x, y, 100, 100);
+            doodle::draw_image(Ghost_Left, x-60, y-40, 100, 100);
+            doodle::draw_image(Ghost_Left, x - 20, y - 40, 100, 100);
         }
         else
         {
             doodle::draw_image(Ghost_Right, x, y, 100, 100);
+            doodle::draw_image(Ghost_Right, x-60, y-40, 100, 100);
+            doodle::draw_image(Ghost_Right, x - 20, y - 40, 100, 100);
         }
 
         pop_settings();

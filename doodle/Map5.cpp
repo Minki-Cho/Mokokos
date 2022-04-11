@@ -44,9 +44,78 @@ void Map5::wall_collision()
     {
         playMoving_y += 3.5;
     }
+    //Upwall
+    //1
+    if (playMoving_x > - 310 && playMoving_x < -305 && playMoving_y < 330 && playMoving_y > 120 )
+    {
+        playMoving_x -= 3.5;
+    }
+    //2
+    if (playMoving_x > 230 && playMoving_x < 235 && playMoving_y < 250 && playMoving_y > 120)
+    {
+        playMoving_x += 3.5;
+    }
+    //3
+    if (playMoving_x > -310 && playMoving_x < 235 && playMoving_y > 120 && playMoving_y < 125)
+    {
+        playMoving_y -= 3.5;
+    }
+    //4
+    if (playMoving_x > -310 && playMoving_x < 235 && playMoving_y > 185 && playMoving_y < 190)
+    {
+        playMoving_y += 3.5;
+    }
+    //5
+    if (playMoving_x > -220 && playMoving_x < -215 && playMoving_y < 330 && playMoving_y > 120)
+    {
+        playMoving_x += 3.5;
+    }
+    //6
+    if (playMoving_x > 140 && playMoving_x < 145 && playMoving_y < 250 && playMoving_y > 120)
+    {
+        playMoving_x -= 3.5;
+    }
+    //7
+    if (playMoving_x > 140 && playMoving_x < 235 && playMoving_y > 250 && playMoving_y < 255)
+    {
+        playMoving_y += 3.5;
+    }
+
+
+    //Down wall
+    //1
+    if (playMoving_x > -310 && playMoving_x < -305 && playMoving_y < -150 && playMoving_y > -400)
+    {
+        playMoving_x -= 3.5;
+    }
+    //2
+    if (playMoving_x > -310 && playMoving_x < 290 && playMoving_y < -130 && playMoving_y > -135)
+    {
+        playMoving_y += 3.5;
+    }
+    //3
+    if (playMoving_x > 285 && playMoving_x < 290 && playMoving_y < -150 && playMoving_y > -330)
+    {
+        playMoving_x += 3.5;
+    }
+    //4
+    if (playMoving_x > -110 && playMoving_x < 290 && playMoving_y < -330 && playMoving_y > -335)
+    {
+        playMoving_y -= 3.5;
+    }
+    //5
+    if (playMoving_x < -110 && playMoving_x > -115 && playMoving_y < -275 && playMoving_y > -330)
+    {
+        playMoving_x -= 3.5;
+    }
+    //6
+    if (playMoving_x > -110 && playMoving_x < 290 && playMoving_y < -270 && playMoving_y > -275)
+    {
+        playMoving_y += 3.5;
+    }
+    //7
+    
 }
-
-
 
 void Map5::Map5_Door()
 {
