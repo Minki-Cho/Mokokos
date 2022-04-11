@@ -9,13 +9,17 @@
 #include "Map3.h"
 #include "Map4.h"
 #include "Map5.h"
+#include "Gameover.h"
+
+
 enum class PlayScenes
 {
     Map1,
     Map2,
     Map3,
     Map4,
-    Map5
+    Map5, 
+    Gameover
 };
 
 class GamePlay

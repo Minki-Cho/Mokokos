@@ -11,6 +11,7 @@ void Item::Draw(double x, double y, double draw_width, double draw_height) const
 
 void Item::Update(double x, double y, double draw_width, double draw_height, bool& Stats)
 {
+    push_settings();
     set_image_mode(doodle::RectMode::Center);
     draw_rectangle(x, y, draw_width, draw_height);
     if (x - draw_width / 2 < playMoving_x && x + draw_width / 2 > playMoving_x)
@@ -20,6 +21,7 @@ void Item::Update(double x, double y, double draw_width, double draw_height, boo
             Stats = true;
         }
     }
+    pop_settings();
 }
 
 

@@ -45,7 +45,10 @@ void Object::Draw() const
         doodle::draw_image(activated_object, object_x, object_y, 100, 100);
         doodle::pop_settings();
     }
-        
+    push_settings();
+    set_fill_color(255, 0, 0);
+    doodle::draw_rectangle(object_x + 80, object_y - 20, 15, 5 / interaction_time);
+    pop_settings();
     
     doodle::pop_settings();
 }

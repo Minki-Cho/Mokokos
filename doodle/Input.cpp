@@ -68,7 +68,7 @@ void Input::key_pressed(KeyboardButtons button)
         {
             Level1_on = true;
 		}
-        else if (Lever2_Area == true)
+        if (Lever2_Area == true)
         {
             Level2_on = true;
 		}

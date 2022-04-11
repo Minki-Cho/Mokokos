@@ -14,6 +14,9 @@ class Map5  final : public GameScene
     doodle::Image Basement{ "assets/Basement.png" };
     doodle::Image Lever_on{ "assets/Lever_on.png" };
     doodle::Image Lever_off{ "assets/Lever_off.png" };
+    double        shake     = 1.0;
+    const double  MaxAngle  = QUARTER_PI / 20.0;
+    const double  MaxOffset = 10.0;
 
 public:
     Map5(GamePlay& game_scene);
@@ -22,4 +25,5 @@ public:
     void Draw() const override;
     void wall_collision();
     void Map5_Door();
+    void ScreenShake();
 };

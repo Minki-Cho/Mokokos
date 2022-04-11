@@ -96,6 +96,9 @@
     <ClInclude Include="Map5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Gameover.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="doodle.rc">
@@ -169,6 +172,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Map5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gameover.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
