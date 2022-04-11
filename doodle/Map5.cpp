@@ -13,6 +13,9 @@ void Map5::Update()
     ghost.Update();
     wall_collision();
     Map5_Door();
+    draw_ellipse(210, -210, 80, 80);
+    item.Update(210, -210, 80, 80, Lever1_Area);
+    item.Update(-160, 240, 80, 80, Lever2_Area);
 }
 
 void Map5::Draw() const
@@ -22,10 +25,27 @@ void Map5::Draw() const
     set_image_mode(doodle::RectMode::Center);
     doodle::draw_image(Basement, 0, 0);
     pop_settings();
+
+    if (Level1_on == false)
+    {
+        item.Image_Draw(Lever_off, 210, -210, 80, 80);
+    }
+    else
+    {
+        item.Image_Draw(Lever_on, 210, -210, 80, 80);
+    }
+
+    if (Level2_on == false)
+    {
+        item.Image_Draw(Lever_off, -160, 240, 80, 80);
+    }
+    else
+    {
+        item.Image_Draw(Lever_on, -160, 240, 80, 80);
+    }
     player.Draw();
     ghost.Draw();
 }
-
 void Map5::wall_collision()
 {
     if (playMoving_x < -420) // left wall
