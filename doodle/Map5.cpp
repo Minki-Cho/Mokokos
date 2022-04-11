@@ -114,7 +114,20 @@ void Map5::wall_collision()
         playMoving_y += 3.5;
     }
     //7
-    
+    if (playMoving_x > 205 && playMoving_x < 210 && playMoving_y < -150 && playMoving_y > -330)
+    {
+        playMoving_x -= 3.5;
+    }
+    //8
+    if (playMoving_x > -310 && playMoving_x < 290 && playMoving_y < -200 && playMoving_y > -205)
+    {
+        playMoving_y -= 3.5;
+    }
+    //9
+    if (playMoving_x > -215 && playMoving_x < -210 && playMoving_y < -150 && playMoving_y > -400)
+    {
+        playMoving_x += 3.5;
+    }
 }
 
 void Map5::Map5_Door()
