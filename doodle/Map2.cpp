@@ -22,13 +22,10 @@ void Map2::Update()
 
 void Map2::Draw() const
 {
-   
     doodle::draw_image(bed, -512, -512);
      object2.Draw();
-    
     player.Draw();
     ghost.Draw();
-
 }
 
 void Map2::wall_collision()
