@@ -9,7 +9,7 @@ private:
     double distance_x = 0;
     double distance_y = 0;
     double distance   = 0;
-
+    double time;
 
     double interaction_time = 0;
     bool have_object = false;

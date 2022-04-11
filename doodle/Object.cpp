@@ -20,6 +20,7 @@ Object::~Object()
 void Object::Update()
 {
     Collision();
+    
 }
 
 void Object::Draw() const
@@ -45,12 +46,15 @@ void Object::Draw() const
         doodle::draw_image(activated_object, object_x, object_y, 100, 100);
         doodle::pop_settings();
     }
-    push_settings();
-    set_fill_color(255, 0, 0);
-    doodle::draw_rectangle(object_x + 80, object_y - 20, 15, 5 / interaction_time);
-    pop_settings();
-    
-    doodle::pop_settings();
+    if (time > 0)
+    {
+        push_settings();
+        set_fill_color(255, 255, 255);
+        doodle::draw_rectangle(object_x + 80, object_y - 20, 15, 100);
+        set_fill_color(255, 0, 0);
+        doodle::draw_rectangle(object_x + 80, object_y - 20, 15, time);
+        pop_settings();
+    }
 }
 
 void Object::Collision()
@@ -67,13 +71,18 @@ void Object::Collision()
          doodle::draw_ellipse(object_x, object_y, 1100, 1100);
         if (input.g_key == true)
         {
+            time = 100 - interaction_time * 50;
             interaction_time += DeltaTime;
         }
         else
         {
+            //time             = 0;
             interaction_time = 0;
         }
+        
+        
     }
+    
     //3_time_
     if (interaction_time >= 3)
     {
