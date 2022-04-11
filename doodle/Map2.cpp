@@ -27,9 +27,11 @@ void Map2::Draw() const
 
 
      if (Get_Frame == false)
-    {
+     {
+        //Stats = true;
         item.Image_Draw(Broken_Frame, 0, 0, 500, 500);
         item.Update(0, 0, 500, 500, Get_Frame);
+        
      }
 
     pop_settings();

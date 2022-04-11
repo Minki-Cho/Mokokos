@@ -11,15 +11,15 @@ void Item::Draw(double x, double y,double draw_width, double draw_height) const
 
 
 
-void Item::Update(double x, double y, double draw_width, double draw_height , bool Stats) 
+void Item::Update(double x, double y, double draw_width, double draw_height , bool &Stats) 
 {
-    Stats = true;
+    
     set_image_mode(doodle::RectMode::Center);
-    if (x - draw_width / 2 < playMoving_x && x + draw_width /2 > playMoving_x)
+    if (x - draw_width / 2 < playMoving_x && x + draw_width /2 > playMoving_x*3)
     {
-        if (y - draw_height / 2 < playMoving_y && y + draw_height / 2 > playMoving_y)
+        if (y - draw_height / 2 < playMoving_y && y + draw_height / 2 > playMoving_y*3)
         {
-            Get_Frame = true;
+            Stats = true;
         }
     }
 }
