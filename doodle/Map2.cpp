@@ -24,15 +24,8 @@ void Map2::Draw() const
 {
    
     doodle::draw_image(bed, -512, -512);
-
-    doodle::push_settings();
-    set_image_mode(doodle::RectMode::Center);
-     if (Get_Frame == false)
-     {
-        
-     }
      object2.Draw();
-    doodle::pop_settings();
+    
     player.Draw();
     ghost.Draw();
 
