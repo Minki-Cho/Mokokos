@@ -1,5 +1,8 @@
 #include "Input.h"
 #include "GamePlay.h"
+#include <iostream>
+using namespace std;
+
 using namespace doodle;
 
 void Input::PlayerMovement()
@@ -57,10 +60,20 @@ void Input::key_pressed(KeyboardButtons button)
 	{
 		g_key = true;
 
-		  if (Get_Frame == true)
+		if (Get_Frame == true)
         {
             Frame_Stats = true;
         }
+		if (Lever1_Area == true)
+        {
+            Level1_on = true;
+		}
+        else if (Lever2_Area == true)
+        {
+            Level2_on = true;
+		}
+        
+    
        
 	}
     if (button == KeyboardButtons::Tab)

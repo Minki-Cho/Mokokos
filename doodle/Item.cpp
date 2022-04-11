@@ -1,23 +1,21 @@
 #include "Item.h"
-#include "Player.h"
 #include "Map2.h"
+#include "Player.h"
 #include <iostream>
 using namespace std;
-void Item::Draw(double x, double y,double draw_width, double draw_height) const
+void Item::Draw(double x, double y, double draw_width, double draw_height) const
 {
-
     doodle::draw_ellipse(x, y, draw_width, draw_height);
 }
 
 
-
-void Item::Update(double x, double y, double draw_width, double draw_height , bool &Stats) 
+void Item::Update(double x, double y, double draw_width, double draw_height, bool& Stats)
 {
-    
     set_image_mode(doodle::RectMode::Center);
-    if (x - draw_width / 2 < playMoving_x && x + draw_width /2 > playMoving_x*3)
+    draw_rectangle(x, y, draw_width, draw_height);
+    if (x - draw_width / 2 < playMoving_x && x + draw_width / 2 > playMoving_x)
     {
-        if (y - draw_height / 2 < playMoving_y && y + draw_height / 2 > playMoving_y*3)
+        if (y - draw_height / 2 < playMoving_y && y + draw_height / 2 > playMoving_y)
         {
             Stats = true;
         }
@@ -25,9 +23,10 @@ void Item::Update(double x, double y, double draw_width, double draw_height , bo
 }
 
 
-
 void Item::Image_Draw(Image image, double x, double y, double draw_width, double draw_height)
 {
+    doodle::push_settings();
     set_image_mode(doodle::RectMode::Center);
-    doodle::draw_image(image,x, y, draw_width, draw_height);
+    doodle::draw_image(image, x, y, draw_width, draw_height);
+    doodle::pop_settings();
 }

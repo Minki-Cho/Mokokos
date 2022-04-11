@@ -93,7 +93,7 @@ void Map4::Map4_Door()
         playMoving_y = 330;
     }
 
-    if (Frame_Stats == false)
+    if (Frame_Stats == true)
     {
       if ( playMoving_x >= 130 && playMoving_x<=330 )
       {
