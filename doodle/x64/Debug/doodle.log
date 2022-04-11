@@ -1,23 +1,7 @@
-﻿  CreditsScreen.cpp
-  Game.cpp
-  GamePlay.cpp
-  Input.cpp
-  Inventory.cpp
-  Item.cpp
-  ItemKey.cpp
-  MainMenu.cpp
-  Map1.cpp
-  Map2.cpp
-  Map3.cpp
-  Map4.cpp
-  Map5.cpp
-  Object.cpp
-  OptionsScreen.cpp
-  PlayScreen.cpp
-  main.cpp
-  코드를 생성하고 있습니다...
-  doodle.vcxproj -> C:\Users\truth\OneDrive\바탕 화면\mokoko\Mokokoss\x64\Debug\doodle.exe
-  0 File(s) copied
-  0 File(s) copied
-  0 File(s) copied
-  0 File(s) copied
+﻿  Object.cpp
+     C:\Users\82105\Desktop\Gam_150\Mokoko\x64\Debug\doodle.lib 라이브러리 및 C:\Users\82105\Desktop\Gam_150\Mokoko\x64\Debug\doodle.exp 개체를 생성하고 있습니다.
+  doodle.vcxproj -> C:\Users\82105\Desktop\Gam_150\Mokoko\x64\Debug\doodle.exe
+  0개 파일이 복사되었습니다.
+  0개 파일이 복사되었습니다.
+  0개 파일이 복사되었습니다.
+  0개 파일이 복사되었습니다.

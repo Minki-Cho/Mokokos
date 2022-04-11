@@ -46,6 +46,8 @@ void Map5::wall_collision()
     }
 }
 
+
+
 void Map5::Map5_Door()
 {
     if (playMoving_x <= -390)

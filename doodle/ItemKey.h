@@ -5,7 +5,7 @@ class ItemKey : public Item
 {
 private:
 
-    doodle::Image image{ "assets/item/piece_1.png" };
+    doodle::Image Whale{ "assets/item/Whale.png" };
 
 
 public:

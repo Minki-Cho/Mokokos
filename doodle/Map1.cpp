@@ -14,7 +14,7 @@ Map1::Map1(GamePlay& game_scene) : GameScene(game_scene), object1(0,0)
 
 void Map1::Update()
 {
-    object1.Update();
+    //object1.Update();
 	player.Update();
 	wall_collision();
     ghost.Update();
@@ -26,7 +26,7 @@ void Map1::Draw() const
 	doodle::draw_image(hall, -512, -512);
 	player.Draw();
     ghost.Draw();
-    object1.Draw();
+    //object1.Draw();
 }
 void Map1::wall_collision()
 {

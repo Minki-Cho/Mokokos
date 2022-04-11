@@ -4,6 +4,7 @@
 #include <cmath>
 #include <iostream>
 #include "Inventory.h"
+#include "Map2.h"
 Object::Object(double x, double y) : object_x(x), object_y(y)
 {
     item = new ItemKey();
@@ -28,9 +29,23 @@ void Object::Draw() const
     //doodle::set_fill_color(255, 255, 255);
     //doodle::draw_ellipse(object_x, object_y, 100, 100);
     if (pick_up == false)
-        doodle::draw_image(object,object_x,object_y,100,100);
+    {
+        doodle::push_settings();
+        set_image_mode(doodle::RectMode::Center);
+        doodle::apply_scale(8.0, 8.0);
+        doodle::draw_image(object, object_x, object_y, 100, 100);
+        doodle::pop_settings();
+    }
+
     else
+    {
+        doodle::push_settings();
+        set_image_mode(doodle::RectMode::Center);
+        doodle::apply_scale(8.0, 8.0);
         doodle::draw_image(activated_object, object_x, object_y, 100, 100);
+        doodle::pop_settings();
+    }
+        
     
     doodle::pop_settings();
 }
@@ -40,11 +55,13 @@ void Object::Collision()
     distance_x = object_x - playMoving_x;
     distance_y = object_y - playMoving_y;
     distance   = std::sqrt(distance_x * distance_x + distance_y * distance_y);
+
+
      //std::cout << doodle::Width << "\n";
 
     if (distance <= 100)
     {
-        // doodle::draw_ellipse(object_x, object_y, 1100, 1100);
+         doodle::draw_ellipse(object_x, object_y, 1100, 1100);
         if (input.g_key == true)
         {
             interaction_time += DeltaTime;
@@ -58,7 +75,7 @@ void Object::Collision()
     if (interaction_time >= 3)
     {
         pick_up = true;
-
+        Get_Frame = true;
     }
 
     if (pick_up == true && have_object == false)

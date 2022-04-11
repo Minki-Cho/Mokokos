@@ -7,12 +7,13 @@
 #include <iostream>
 using namespace std;
 
-Map2::Map2(GamePlay& game_scene) : GameScene(game_scene)
+Map2::Map2(GamePlay& game_scene) : GameScene(game_scene), object2(0, 0)
 {
     std::cout << "Map2 create!\n";
 }
 void Map2::Update()
 {
+    object2.Update();
     player.Update();
     ghost.Update();
     wall_collision();
@@ -21,22 +22,20 @@ void Map2::Update()
 
 void Map2::Draw() const
 {
+   
     doodle::draw_image(bed, -512, -512);
-    push_settings();
+
+    doodle::push_settings();
     set_image_mode(doodle::RectMode::Center);
-
-
      if (Get_Frame == false)
      {
-        //Stats = true;
-        item.Image_Draw(Broken_Frame, 0, 0, 500, 500);
-        item.Update(0, 0, 500, 500, Get_Frame);
         
      }
-
-    pop_settings();
+     object2.Draw();
+    doodle::pop_settings();
     player.Draw();
     ghost.Draw();
+
 }
 
 void Map2::wall_collision()

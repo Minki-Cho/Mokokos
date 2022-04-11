@@ -24,8 +24,8 @@ public:
 
     ~Object();
 
-    void Update();
-    void Draw() const;
+     void  Update();
+     void Draw() const;
 
     void Collision();
 
